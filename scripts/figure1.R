@@ -19,7 +19,6 @@ plot1 <- DimPlot(scobj, label = F, pt.size = 0.1,
         axis.text.x = element_blank(),
         axis.ticks.x = element_blank())
 plot1
-
 Idents(scobj) <- "Celltype"
 pal <- paletteer_d("ggsci::nrc_npg")
 plot2 <- DimPlot(scobj, label = T, pt.size = 0.1, repel = F,shuffle = T, split.by = "Condition",
