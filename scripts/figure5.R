@@ -25,7 +25,6 @@ plot1 <- DimPlot(scobj, label = F, pt.size = 0.5,
         axis.text.x = element_blank(),
         axis.ticks.x = element_blank())
 plot1
-
 Idents(scobj) <- "celltype"
 Idents(scobj) <- factor(Idents(scobj), 
                         levels = c('Arterial EC','Venular EC','Capillary EC','Lymphatic EC',
