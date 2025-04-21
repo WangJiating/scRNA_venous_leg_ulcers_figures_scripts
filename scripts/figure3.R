@@ -95,7 +95,7 @@ p <- ggplot(df.plot,aes(x=features.plot,y =   as.numeric(id),size = pct.exp, fil
                        name = "Average expression") +
   cowplot::theme_cowplot() + 
   ylab("") + xlab("") + 
-  scale_y_continuous(breaks = 1:length(levels(df.plot$id)),labels = levels(df.plot$id),sec.axis = dup_axis())+ #复制 y轴 代替边框效果
+  scale_y_continuous(breaks = 1:length(levels(df.plot$id)),labels = levels(df.plot$id),sec.axis = dup_axis())+ 
   facet_grid(~label, scales="free_x",space = "free")+theme_classic() +
   theme_bw() + 
   theme(
