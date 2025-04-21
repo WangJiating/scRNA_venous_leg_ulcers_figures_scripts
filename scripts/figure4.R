@@ -22,7 +22,7 @@ sce.markers.all <- Seurat::FindAllMarkers(sce,
                                           min.pct = 0.1,
                                           logfc.threshold = 0.25)
 
-# get top 10 genes
+# get top 40 genes
 sce.markers <- sce.markers.all %>%
   dplyr::group_by(cluster) %>%
   dplyr::top_n(n = 40, wt = avg_log2FC)
