@@ -97,7 +97,7 @@ gseaNb(object = y,
        curveCol =  jjAnno::useMyCol('paired',6),
        pvalX = 0.05,pvalY = 0.05)
 
-#### DEGs ----
+#### EC DEGs ----
 scobj_EC <- subset(scobj, idents = c('Arterial EC','Venular EC','Capillary EC'))
 markers <- c("CCL2",'CXCL2','CXCL12','CXCL14','IL6','IL33','ICAM1','TNFAIP3','NFKBIA',
              'CD9','CD36','CD55','CD74','HLA-B','HLA-DMA','HLA-DPA1','HLA-DPB1','HLA-DQA1',
